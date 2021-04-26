@@ -1,0 +1,121 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Imports/PlayerIdle.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Player.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Block.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/SlimeBlock.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Imports/PlayerJump.png" type="Texture" id=5]
+[ext_resource path="res://Imports/PlayerFall.png" type="Texture" id=6]
+[ext_resource path="res://Imports/PlayerRun4.png" type="Texture" id=7]
+[ext_resource path="res://Imports/PlayerRun5.png" type="Texture" id=8]
+[ext_resource path="res://Imports/PlayerRun6.png" type="Texture" id=9]
+[ext_resource path="res://Imports/PlayerRun1.png" type="Texture" id=10]
+[ext_resource path="res://Imports/PlayerRun2.png" type="Texture" id=11]
+[ext_resource path="res://Imports/PlayerRun3.png" type="Texture" id=12]
+[ext_resource path="res://Imports/PlayerLadder.png" type="Texture" id=13]
+[ext_resource path="res://Imports/PlayerClimb1.png" type="Texture" id=14]
+[ext_resource path="res://Imports/PlayerClimb4.png" type="Texture" id=15]
+[ext_resource path="res://Imports/PlayerClimb5.png" type="Texture" id=16]
+[ext_resource path="res://Imports/PlayerClimb7.png" type="Texture" id=17]
+[ext_resource path="res://Imports/PlayerClimb8.png" type="Texture" id=18]
+[ext_resource path="res://Imports/PlayerClimb6.png" type="Texture" id=19]
+[ext_resource path="res://Imports/PlayerClimb2.png" type="Texture" id=20]
+[ext_resource path="res://Imports/PlayerClimb3.png" type="Texture" id=21]
+[ext_resource path="res://Imports/Sounds/Land.wav" type="AudioStream" id=22]
+[ext_resource path="res://Imports/Sounds/Walk.wav" type="AudioStream" id=23]
+[ext_resource path="res://Imports/Sounds/PlaceSlime.wav" type="AudioStream" id=24]
+[ext_resource path="res://Imports/Sounds/PlaceDirt.wav" type="AudioStream" id=25]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Run",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Climb",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "Ladder",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 4, 7 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1, 1 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 4, 7 )
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+NONE = 4
+JUMP_VELOCITY = 160
+ACCELERATION = 8
+RUN_SPEED_MAX = 80
+GRAVITY = 12
+MAX_GRAVITY = 300
+CLIMB_SPEED = 50
+blockList = [ null, ExtResource( 3 ), ExtResource( 4 ) ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Idle"
+centered = false
+
+[node name="CollisionBox" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 8, 9 )
+shape = SubResource( 2 )
+
+[node name="HeadCheck" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HeadCheck"]
+position = Vector2( 8, -14 )
+shape = SubResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 8, 9 )
+shape = SubResource( 4 )
+
+[node name="Audio" type="Node2D" parent="."]
+
+[node name="Land" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 22 )
+volume_db = -2.0
+
+[node name="Walk" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 23 )
+volume_db = -12.0
+
+[node name="Dirt" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 25 )
+volume_db = -12.0
+
+[node name="Slime" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 24 )
+volume_db = -12.0
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

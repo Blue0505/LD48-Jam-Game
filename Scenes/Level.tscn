@@ -1,0 +1,732 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/TestSquare.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Imports/BackgroundUpdated.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/BlockStone.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Imports/SlotEmpty.png" type="Texture" id=6]
+[ext_resource path="res://Imports/ItemSlot.png" type="Texture" id=8]
+
+[node name="Level" type="Node"]
+
+[node name="Background" type="Sprite" parent="."]
+z_index = -1000
+texture = ExtResource( 4 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Stone" type="Node2D" parent="Blocks"]
+
+[node name="StoneBlock" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 160 )
+
+[node name="StoneBlock2" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 160 )
+
+[node name="StoneBlock3" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 160 )
+
+[node name="StoneBlock4" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 48, 160 )
+
+[node name="StoneBlock5" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 64, 160 )
+
+[node name="StoneBlock6" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 80, 160 )
+
+[node name="StoneBlock7" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 96, 160 )
+
+[node name="StoneBlock8" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 112, 160 )
+
+[node name="StoneBlock9" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 128, 160 )
+
+[node name="StoneBlock10" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 144, 160 )
+
+[node name="StoneBlock11" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 160, 160 )
+
+[node name="StoneBlock12" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 176, 160 )
+
+[node name="StoneBlock13" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 192, 160 )
+
+[node name="StoneBlock14" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 208, 160 )
+
+[node name="StoneBlock15" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 256, 160 )
+
+[node name="StoneBlock16" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 160 )
+
+[node name="StoneBlock24" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 176 )
+
+[node name="StoneBlock25" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 176 )
+
+[node name="StoneBlock26" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 176 )
+
+[node name="StoneBlock27" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 48, 176 )
+
+[node name="StoneBlock28" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 64, 176 )
+
+[node name="StoneBlock29" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 80, 176 )
+
+[node name="StoneBlock30" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 96, 176 )
+
+[node name="StoneBlock31" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 112, 176 )
+
+[node name="StoneBlock32" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 128, 176 )
+
+[node name="StoneBlock33" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 144, 176 )
+
+[node name="StoneBlock34" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 160, 176 )
+
+[node name="StoneBlock35" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 176, 176 )
+
+[node name="StoneBlock36" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 192, 176 )
+
+[node name="StoneBlock37" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 208, 176 )
+
+[node name="StoneBlock38" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 256, 176 )
+
+[node name="StoneBlock39" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 176 )
+
+[node name="StoneBlock17" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 160 )
+
+[node name="StoneBlock40" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 176 )
+
+[node name="StoneBlock18" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 160 )
+
+[node name="StoneBlock19" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 144 )
+
+[node name="StoneBlock20" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 128 )
+
+[node name="StoneBlock21" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 112 )
+
+[node name="StoneBlock22" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 96 )
+
+[node name="StoneBlock23" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 176 )
+
+[node name="StoneBlock41" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 64 )
+
+[node name="StoneBlock42" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 48 )
+
+[node name="StoneBlock43" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 32 )
+
+[node name="StoneBlock44" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 16 )
+
+[node name="StoneBlock45" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 0 )
+
+[node name="StoneBlock46" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 80 )
+
+[node name="StoneBlock47" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 160 )
+
+[node name="StoneBlock48" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 144 )
+
+[node name="StoneBlock49" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 128 )
+
+[node name="StoneBlock50" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 112 )
+
+[node name="StoneBlock51" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 96 )
+
+[node name="StoneBlock52" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 64 )
+
+[node name="StoneBlock53" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 48 )
+
+[node name="StoneBlock54" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 32 )
+
+[node name="StoneBlock55" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 16 )
+
+[node name="StoneBlock56" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 0 )
+
+[node name="StoneBlock57" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 304, 80 )
+
+[node name="StoneBlock58" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 144 )
+
+[node name="StoneBlock59" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 128 )
+
+[node name="StoneBlock60" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 112 )
+
+[node name="StoneBlock61" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 96 )
+
+[node name="StoneBlock62" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 64 )
+
+[node name="StoneBlock63" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 48 )
+
+[node name="StoneBlock64" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 32 )
+
+[node name="StoneBlock65" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 16 )
+
+[node name="StoneBlock66" parent="Blocks/Stone" instance=ExtResource( 5 )]
+
+[node name="StoneBlock67" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 80 )
+
+[node name="StoneBlock68" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 144 )
+
+[node name="StoneBlock69" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 128 )
+
+[node name="StoneBlock70" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 112 )
+
+[node name="StoneBlock71" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 96 )
+
+[node name="StoneBlock72" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 64 )
+
+[node name="StoneBlock73" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 48 )
+
+[node name="StoneBlock74" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 32 )
+
+[node name="StoneBlock75" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 16 )
+
+[node name="StoneBlock76" parent="Blocks/Stone" instance=ExtResource( 5 )]
+
+[node name="StoneBlock77" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 0, 80 )
+
+[node name="StoneBlock78" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 144 )
+
+[node name="StoneBlock79" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 128 )
+
+[node name="StoneBlock80" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 112 )
+
+[node name="StoneBlock81" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 96 )
+
+[node name="StoneBlock82" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 64 )
+
+[node name="StoneBlock83" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 48 )
+
+[node name="StoneBlock84" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 32 )
+
+[node name="StoneBlock85" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 16 )
+
+[node name="StoneBlock86" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 0 )
+
+[node name="StoneBlock87" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 80 )
+
+[node name="StoneBlock88" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 144 )
+
+[node name="StoneBlock89" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 128 )
+
+[node name="StoneBlock90" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 112 )
+
+[node name="StoneBlock91" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 96 )
+
+[node name="StoneBlock92" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 64 )
+
+[node name="StoneBlock93" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 48 )
+
+[node name="StoneBlock94" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 32 )
+
+[node name="StoneBlock95" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 16 )
+
+[node name="StoneBlock96" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 0 )
+
+[node name="StoneBlock97" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 16, 80 )
+
+[node name="StoneBlock98" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 144 )
+
+[node name="StoneBlock99" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 128 )
+
+[node name="StoneBlock100" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 112 )
+
+[node name="StoneBlock101" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 96 )
+
+[node name="StoneBlock102" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 64 )
+
+[node name="StoneBlock103" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 48 )
+
+[node name="StoneBlock104" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 32 )
+
+[node name="StoneBlock105" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 16 )
+
+[node name="StoneBlock106" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 0 )
+
+[node name="StoneBlock107" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 80 )
+
+[node name="StoneBlock108" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 144 )
+
+[node name="StoneBlock109" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 128 )
+
+[node name="StoneBlock110" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 112 )
+
+[node name="StoneBlock111" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 96 )
+
+[node name="StoneBlock112" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 64 )
+
+[node name="StoneBlock113" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 48 )
+
+[node name="StoneBlock114" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 32 )
+
+[node name="StoneBlock115" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 16 )
+
+[node name="StoneBlock116" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 0 )
+
+[node name="StoneBlock117" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 32, 80 )
+
+[node name="StoneBlock118" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 144 )
+
+[node name="StoneBlock119" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 128 )
+
+[node name="StoneBlock120" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 112 )
+
+[node name="StoneBlock121" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 96 )
+
+[node name="StoneBlock122" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 64 )
+
+[node name="StoneBlock123" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 48 )
+
+[node name="StoneBlock124" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 32 )
+
+[node name="StoneBlock125" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 16 )
+
+[node name="StoneBlock126" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 0 )
+
+[node name="StoneBlock127" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 80 )
+
+[node name="StoneBlock128" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 144 )
+
+[node name="StoneBlock129" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 128 )
+
+[node name="StoneBlock130" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 112 )
+
+[node name="StoneBlock131" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 96 )
+
+[node name="StoneBlock132" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 64 )
+
+[node name="StoneBlock133" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 48 )
+
+[node name="StoneBlock134" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 32 )
+
+[node name="StoneBlock135" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 16 )
+
+[node name="StoneBlock136" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 0 )
+
+[node name="StoneBlock137" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 288, 80 )
+
+[node name="StoneBlock138" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 144 )
+
+[node name="StoneBlock139" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 128 )
+
+[node name="StoneBlock140" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 112 )
+
+[node name="StoneBlock141" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 96 )
+
+[node name="StoneBlock142" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 64 )
+
+[node name="StoneBlock143" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 48 )
+
+[node name="StoneBlock144" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 32 )
+
+[node name="StoneBlock145" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 16 )
+
+[node name="StoneBlock146" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 0 )
+
+[node name="StoneBlock147" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 80 )
+
+[node name="StoneBlock148" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 144 )
+
+[node name="StoneBlock149" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 128 )
+
+[node name="StoneBlock150" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 112 )
+
+[node name="StoneBlock151" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 96 )
+
+[node name="StoneBlock152" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 64 )
+
+[node name="StoneBlock153" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 48 )
+
+[node name="StoneBlock154" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 32 )
+
+[node name="StoneBlock155" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 16 )
+
+[node name="StoneBlock156" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 0 )
+
+[node name="StoneBlock158" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 256, 16 )
+
+[node name="StoneBlock159" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 256, 0 )
+
+[node name="StoneBlock160" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 256, 16 )
+
+[node name="StoneBlock161" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 256, 0 )
+
+[node name="StoneBlock162" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 240, 16 )
+
+[node name="StoneBlock163" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 240, 0 )
+
+[node name="StoneBlock164" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 240, 16 )
+
+[node name="StoneBlock165" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 240, 0 )
+
+[node name="StoneBlock166" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 224, 16 )
+
+[node name="StoneBlock167" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 224, 0 )
+
+[node name="StoneBlock168" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 224, 16 )
+
+[node name="StoneBlock169" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 224, 0 )
+
+[node name="StoneBlock170" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 208, 16 )
+
+[node name="StoneBlock171" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 208, 0 )
+
+[node name="StoneBlock172" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 208, 16 )
+
+[node name="StoneBlock173" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 208, 0 )
+
+[node name="StoneBlock174" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 192, 16 )
+
+[node name="StoneBlock175" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 192, 0 )
+
+[node name="StoneBlock176" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 192, 16 )
+
+[node name="StoneBlock177" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 192, 0 )
+
+[node name="StoneBlock178" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 176, 16 )
+
+[node name="StoneBlock179" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 176, 0 )
+
+[node name="StoneBlock180" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 176, 16 )
+
+[node name="StoneBlock181" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 176, 0 )
+
+[node name="StoneBlock182" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 160, 16 )
+
+[node name="StoneBlock183" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 160, 0 )
+
+[node name="StoneBlock184" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 160, 16 )
+
+[node name="StoneBlock185" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 160, 0 )
+
+[node name="StoneBlock186" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 144, 16 )
+
+[node name="StoneBlock187" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 144, 0 )
+
+[node name="StoneBlock188" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 144, 16 )
+
+[node name="StoneBlock189" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 144, 0 )
+
+[node name="StoneBlock190" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 128, 16 )
+
+[node name="StoneBlock191" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 128, 0 )
+
+[node name="StoneBlock192" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 128, 16 )
+
+[node name="StoneBlock193" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 128, 0 )
+
+[node name="StoneBlock194" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 112, 16 )
+
+[node name="StoneBlock195" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 112, 0 )
+
+[node name="StoneBlock196" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 112, 16 )
+
+[node name="StoneBlock197" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 112, 0 )
+
+[node name="StoneBlock198" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 96, 16 )
+
+[node name="StoneBlock199" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 96, 0 )
+
+[node name="StoneBlock200" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 96, 16 )
+
+[node name="StoneBlock201" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 96, 0 )
+
+[node name="StoneBlock157" parent="Blocks/Stone" instance=ExtResource( 5 )]
+position = Vector2( 272, 80 )
+
+[node name="Dirt" type="Node2D" parent="Blocks"]
+
+[node name="DirtBlock" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 48, 144 )
+
+[node name="DirtBlock30" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 48, 128 )
+
+[node name="DirtBlock26" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 256, 144 )
+
+[node name="DirtBlock27" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 256, 128 )
+
+[node name="DirtBlock2" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 64, 144 )
+
+[node name="DirtBlock3" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 80, 144 )
+
+[node name="DirtBlock4" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 96, 144 )
+
+[node name="DirtBlock23" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 96, 32 )
+
+[node name="DirtBlock24" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 112, 32 )
+
+[node name="DirtBlock5" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 112, 144 )
+
+[node name="DirtBlock6" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 128, 144 )
+
+[node name="DirtBlock7" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 144, 144 )
+
+[node name="DirtBlock8" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 160, 144 )
+
+[node name="DirtBlock9" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 176, 144 )
+
+[node name="DirtBlock10" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 192, 144 )
+
+[node name="DirtBlock11" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 208, 144 )
+
+[node name="DirtBlock12" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 208, 144 )
+
+[node name="DirtBlock13" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 128, 32 )
+
+[node name="DirtBlock14" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 144, 32 )
+
+[node name="DirtBlock15" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 160, 32 )
+
+[node name="DirtBlock16" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 176, 32 )
+
+[node name="DirtBlock17" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 192, 32 )
+
+[node name="DirtBlock18" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 208, 32 )
+
+[node name="DirtBlock19" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 224, 32 )
+
+[node name="DirtBlock20" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 240, 32 )
+
+[node name="DirtBlock21" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 256, 32 )
+
+[node name="DirtBlock22" parent="Blocks/Dirt" instance=ExtResource( 2 )]
+position = Vector2( 256, 32 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 64, -16 )
+
+[node name="Cursor" parent="." instance=ExtResource( 3 )]
+position = Vector2( -16, -16 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control"]
+position = Vector2( 4, 4 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Slot" type="Sprite" parent="Control"]
+position = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+centered = false

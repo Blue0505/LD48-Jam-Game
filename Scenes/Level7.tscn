@@ -1,0 +1,379 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Imports/SlotEmpty.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/TestSquare.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/BlockStone.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Imports/BackgroundSlime.png" type="Texture" id=5]
+[ext_resource path="res://Imports/ItemSlot.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Block.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/SlimeBlock.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Ladder.tscn" type="PackedScene" id=9]
+
+[node name="Level7" type="Node"]
+
+[node name="Background" type="Sprite" parent="."]
+z_index = -1000
+texture = ExtResource( 5 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Parts" type="Node2D" parent="."]
+
+[node name="Stone" type="Node2D" parent="Parts"]
+
+[node name="StoneBlock" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 176 )
+
+[node name="StoneBlock2" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 16, 176 )
+
+[node name="StoneBlock3" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 32, 176 )
+
+[node name="StoneBlock4" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 48, 176 )
+
+[node name="StoneBlock5" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 64, 176 )
+
+[node name="StoneBlock6" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 80, 176 )
+
+[node name="StoneBlock7" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 96, 176 )
+
+[node name="StoneBlock8" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 112, 176 )
+
+[node name="StoneBlock9" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 128, 176 )
+
+[node name="StoneBlock10" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 144, 176 )
+
+[node name="StoneBlock11" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 160, 176 )
+
+[node name="StoneBlock12" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 176, 176 )
+
+[node name="StoneBlock13" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 192, 176 )
+
+[node name="StoneBlock14" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 208, 176 )
+
+[node name="StoneBlock15" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 224, 176 )
+
+[node name="StoneBlock16" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 240, 176 )
+
+[node name="StoneBlock17" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 208, 144 )
+
+[node name="StoneBlock18" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 208, 128 )
+
+[node name="StoneBlock19" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 192, 128 )
+
+[node name="StoneBlock43" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 192, 112 )
+
+[node name="StoneBlock62" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 64, 144 )
+
+[node name="StoneBlock61" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 208, 112 )
+
+[node name="StoneBlock46" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 64, 0 )
+
+[node name="StoneBlock47" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 80, 0 )
+
+[node name="StoneBlock48" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 96, 0 )
+
+[node name="StoneBlock49" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 112, 0 )
+
+[node name="StoneBlock50" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 128, 0 )
+
+[node name="StoneBlock51" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 144, 0 )
+
+[node name="StoneBlock52" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 160, 0 )
+
+[node name="StoneBlock53" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 176, 0 )
+
+[node name="StoneBlock54" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 192, 0 )
+
+[node name="StoneBlock55" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 208, 0 )
+
+[node name="StoneBlock56" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 224, 0 )
+
+[node name="StoneBlock57" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 240, 0 )
+
+[node name="StoneBlock58" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 256, 0 )
+
+[node name="StoneBlock59" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 272, 0 )
+
+[node name="StoneBlock60" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 288, 0 )
+
+[node name="StoneBlock20" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 176 )
+
+[node name="StoneBlock21" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 160 )
+
+[node name="StoneBlock22" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 144 )
+
+[node name="StoneBlock23" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 128 )
+
+[node name="StoneBlock24" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 112 )
+
+[node name="StoneBlock25" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 96 )
+
+[node name="StoneBlock26" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 80 )
+
+[node name="StoneBlock27" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 64 )
+
+[node name="StoneBlock28" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 48 )
+
+[node name="StoneBlock29" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 32 )
+
+[node name="StoneBlock30" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 16 )
+
+[node name="StoneBlock31" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 304, 0 )
+
+[node name="StoneBlock32" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 160 )
+
+[node name="StoneBlock33" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 144 )
+
+[node name="StoneBlock34" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 128 )
+
+[node name="StoneBlock35" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 112 )
+
+[node name="StoneBlock36" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 96 )
+
+[node name="StoneBlock37" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 80 )
+
+[node name="StoneBlock38" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 64 )
+
+[node name="StoneBlock39" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 48 )
+
+[node name="StoneBlock40" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 32 )
+
+[node name="StoneBlock41" parent="Parts/Stone" instance=ExtResource( 3 )]
+position = Vector2( 0, 16 )
+
+[node name="StoneBlock42" parent="Parts/Stone" instance=ExtResource( 3 )]
+
+[node name="Dirt" type="Node2D" parent="Parts"]
+
+[node name="DirtBlock" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 96, 160 )
+
+[node name="DirtBlock23" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 80, 160 )
+
+[node name="DirtBlock24" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 128, 160 )
+
+[node name="DirtBlock25" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 112, 160 )
+
+[node name="DirtBlock26" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 160, 160 )
+
+[node name="DirtBlock27" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 144, 160 )
+
+[node name="DirtBlock28" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 192, 160 )
+
+[node name="DirtBlock29" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 176, 160 )
+
+[node name="DirtBlock30" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 224, 160 )
+
+[node name="DirtBlock32" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 240, 160 )
+
+[node name="DirtBlock33" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 240, 144 )
+
+[node name="DirtBlock34" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 224, 144 )
+
+[node name="DirtBlock35" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 192, 96 )
+
+[node name="DirtBlock36" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 208, 96 )
+
+[node name="DirtBlock37" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 224, 96 )
+
+[node name="DirtBlock38" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 240, 96 )
+
+[node name="DirtBlock39" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 240, 112 )
+
+[node name="DirtBlock40" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 240, 128 )
+
+[node name="DirtBlock41" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 224, 128 )
+
+[node name="DirtBlock42" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 224, 112 )
+
+[node name="DirtBlock31" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 208, 160 )
+
+[node name="DirtBlock2" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 96, 96 )
+
+[node name="DirtBlock3" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 64, 96 )
+
+[node name="DirtBlock4" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 48, 96 )
+
+[node name="DirtBlock5" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 32, 96 )
+
+[node name="DirtBlock6" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 16, 96 )
+
+[node name="DirtBlock7" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 64, 112 )
+
+[node name="DirtBlock8" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 48, 112 )
+
+[node name="DirtBlock9" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 32, 112 )
+
+[node name="DirtBlock10" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 16, 112 )
+
+[node name="DirtBlock11" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 64, 128 )
+
+[node name="DirtBlock12" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 48, 128 )
+
+[node name="DirtBlock13" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 32, 128 )
+
+[node name="DirtBlock14" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 16, 128 )
+
+[node name="DirtBlock16" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 48, 144 )
+
+[node name="DirtBlock17" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 32, 144 )
+
+[node name="DirtBlock18" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 16, 144 )
+
+[node name="DirtBlock19" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 64, 160 )
+
+[node name="DirtBlock20" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 48, 160 )
+
+[node name="DirtBlock21" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 32, 160 )
+
+[node name="DirtBlock22" parent="Parts/Dirt" instance=ExtResource( 7 )]
+position = Vector2( 16, 160 )
+
+[node name="Slime" type="Node2D" parent="Parts"]
+
+[node name="SlimeBlock" parent="Parts/Slime" instance=ExtResource( 8 )]
+position = Vector2( 176, 144 )
+
+[node name="SlimeBlock2" parent="Parts/Slime" instance=ExtResource( 8 )]
+position = Vector2( 192, 144 )
+
+[node name="Ladder" type="Node2D" parent="Parts"]
+
+[node name="Ladder" parent="Parts/Ladder" instance=ExtResource( 9 )]
+position = Vector2( 80, 80 )
+
+[node name="Ladder2" parent="Parts/Ladder" instance=ExtResource( 9 )]
+position = Vector2( 80, 96 )
+
+[node name="Ladder3" parent="Parts/Ladder" instance=ExtResource( 9 )]
+position = Vector2( 80, 112 )
+
+[node name="Ladder4" parent="Parts/Ladder" instance=ExtResource( 9 )]
+position = Vector2( 80, 128 )
+
+[node name="Ladder5" parent="Parts/Ladder" instance=ExtResource( 9 )]
+position = Vector2( 80, 144 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 32, -16 )
+
+[node name="Cursor" parent="." instance=ExtResource( 2 )]
+position = Vector2( -16, -16 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control"]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 4, 4 )
+
+[node name="Slot" type="Sprite" parent="Control"]
+texture = ExtResource( 6 )
+centered = false
+offset = Vector2( 2, 2 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/PlaceSlime.wav-fa7e14c2ed7166b010b9414f16202e1e.sample"
+
+[deps]
+
+source_file="res://Imports/Sounds/PlaceSlime.wav"
+dest_files=[ "res://.import/PlaceSlime.wav-fa7e14c2ed7166b010b9414f16202e1e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
